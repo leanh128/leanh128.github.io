@@ -12,7 +12,6 @@
     background-size: cover;
     height: 540px;
     position: relative;
-    z-index: -1;
 }
 
 .jumbotron::after {
@@ -99,7 +98,8 @@
 
 /* Testimonial */
 .testimonial {
-    margin-top: 130px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .testimonial p {
@@ -111,11 +111,11 @@
 }
 
 .testimonial img {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
     border-radius: 50%;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 .testimonial .img-main {
