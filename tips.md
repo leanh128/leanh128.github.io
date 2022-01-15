@@ -1,16 +1,16 @@
-**Edit Linux Mint - Cinamon's height**
+# Edit Linux Mint - Cinamon's height
 
 Edit cinnamon-settings/modules/cs_panel.py
 
-**disable super key**
+# disable super key
 
 gsettings set org.gnome.mutter overlay-key ''
 
-**change icon size for covering broken monitor**
+# change icon size for covering broken monitor
 
 edit : `/usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/dash.js`
-Move `this._initializeIconSize(this.iconSize);` below `this._monitorIndex = monitorIndex;` in `_init()`
-- Edit function `_initializeIconSize(max_size)`
+* Move `this._initializeIconSize(this.iconSize);` below `this._monitorIndex = monitorIndex;` in `_init()`
+* Edit function `_initializeIconSize(max_size)`
 ```js
 _initializeIconSize(max_size) {
     let max_allowed = baseIconSizes[baseIconSizes.length-1];
