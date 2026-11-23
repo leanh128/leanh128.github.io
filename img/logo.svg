@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="512" height="512">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4.5" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b2"/>
+      <feMerge><feMergeNode in="b1"/><feMergeNode in="b1"/><feMergeNode in="b2"/></feMerge>
+    </filter>
+    <!-- every stroke of "L" and "A" is a lightning zigzag -->
+    <g id="la" fill="none" stroke-linejoin="miter" stroke-linecap="butt">
+      <!-- L -->
+      <path d="M22.0 14.0 L17.0 32.0 L27.0 50.0 L17.0 68.0 L27.0 86.0 L22.0 104.0 L32.7 108.0 L43.3 100.0 L54.0 104.0"/>
+      <!-- A left leg -->
+      <path d="M90.0 14.0 L81.3 33.1 L84.3 54.9 L71.7 73.1 L74.7 94.9 L66.0 114.0"/>
+      <!-- A right leg -->
+      <path d="M90.0 14.0 L90.9 34.9 L103.5 53.1 L100.5 74.9 L113.1 93.1 L114.0 114.0"/>
+      <!-- A crossbar -->
+      <path d="M76.0 86.0 L85.3 90.0 L94.7 82.0 L104.0 86.0"/>
+    </g>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0a0408"/>
+  <rect x="3" y="3" width="122" height="122" rx="25" fill="none" stroke="#ff1f3d" stroke-opacity=".5" stroke-width="2"/>
+  <use href="#la" stroke="#ff0a2e" stroke-width="9" filter="url(#glow)"/>
+  <use href="#la" stroke="#ff3b4f" stroke-width="6"/>
+  <use href="#la" stroke="#ffe3e3" stroke-width="1.8"/>
+</svg>
